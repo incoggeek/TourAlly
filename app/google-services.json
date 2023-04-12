@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "917656186081",
+    "project_id": "tour-ally",
+    "storage_bucket": "tour-ally.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917656186081:android:dff2aa424977a6ddb0dba0",
+        "android_client_info": {
+          "package_name": "com.app.tour_ally"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917656186081-ugq8mei3r5g9kii641c6hdrffhoicu0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tour_ally",
+            "certificate_hash": "4360d638fe20ffed2ff7a0c3f7ee4cd02221c34b"
+          }
+        },
+        {
+          "client_id": "917656186081-kk8abt92j1icts7f3fc4mei2kcf9ucm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmaj2LbD57teoIiFYHifpj12lqI0lOBYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917656186081-kk8abt92j1icts7f3fc4mei2kcf9ucm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
