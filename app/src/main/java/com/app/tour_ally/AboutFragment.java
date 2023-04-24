@@ -1,5 +1,6 @@
 package com.app.tour_ally;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -36,11 +37,13 @@ public class AboutFragment extends Fragment {
     //Method for UI/UX designer
     private void socialDesigner() {
 
-        ImageView linkedIn, dribble, github;
+        ImageView linkedIn, dribble, insta, gmail;
 
         linkedIn = mView.findViewById(R.id.linkedin_gh);
         dribble = mView.findViewById(R.id.dribble);
-        github = mView.findViewById(R.id.github_gh);
+        insta = mView.findViewById(R.id.instagram);
+        gmail = mView.findViewById(R.id.gmail_gh);
+
 
         //LinkedIn
         linkedIn.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +52,13 @@ public class AboutFragment extends Fragment {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://www.linkedin.com/in/ghania-khan-826406195/"));
                 intent.setPackage("com.linkedin.android");
-                startActivity(intent);
+
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    // Instagram not installed, open profile in default browser
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/ghania-khan-826406195/")));
+                }
             }
         });
 
@@ -61,30 +70,56 @@ public class AboutFragment extends Fragment {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(""));
                 intent.setPackage("com.android.chrome");
+
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    // Instagram not installed, open profile in default browser
+                    //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse()));
+                }
+            }
+        });
+
+        //Instagram
+        insta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("http://instagram.com/_u/" + "flaxen_gk");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                intent.setPackage("com.instagram.android");
+
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    // Instagram not installed, open profile in default browser
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://instagram.com/_u/" + "flaxen_gk")));
+                }
+
+            }
+        });
+
+        //Gmail
+        gmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:" + "khanghania@gmail.com"));
+                intent.setPackage("com.google.android.gm");
                 startActivity(intent);
             }
         });
 
-        //Github
-        github.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/incoggeek"));
-                intent.setPackage("com.github.android");
-                startActivity(intent);
-            }
-        });
 
     }
 
     //Method for App dev
     private void socialDev() {
-        ImageView linkedIn, medium, github;
+        ImageView linkedIn, medium, github,gmail;
 
         linkedIn = mView.findViewById(R.id.linkedin_sh);
         medium = mView.findViewById(R.id.medium);
         github = mView.findViewById(R.id.github_sh);
+        gmail = mView.findViewById(R.id.gmail_sh);
 
         //LinkedIn
         linkedIn.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +128,14 @@ public class AboutFragment extends Fragment {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://www.linkedin.com/in/mohd-shamim"));
                 intent.setPackage("com.linkedin.android");
-                startActivity(intent);
+
+
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    // Instagram not installed, open profile in default browser
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/mohd-shamim")));
+                }
             }
         });
 
@@ -105,7 +147,13 @@ public class AboutFragment extends Fragment {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://medium.com/@incog-geek"));
                 intent.setPackage("com.medium.reader");
-                startActivity(intent);
+
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    // Instagram not installed, open profile in default browser
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://medium.com/@incog-geek")));
+                }
             }
         });
 
@@ -116,6 +164,22 @@ public class AboutFragment extends Fragment {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://github.com/incoggeek"));
                 intent.setPackage("com.github.android");
+
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    // Instagram not installed, open profile in default browser
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/incoggeek")));
+                }
+            }
+        });
+
+        gmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:" + "mohdshamim4312@gmail.com"));
+                intent.setPackage("com.google.android.gm");
                 startActivity(intent);
             }
         });

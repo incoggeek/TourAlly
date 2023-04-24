@@ -149,10 +149,21 @@
         android:layout_height="40dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toEndOf="@+id/app_dev"
+        app:layout_constraintEnd_toStartOf="@+id/gmail_sh"
         app:layout_constraintStart_toEndOf="@+id/github_sh"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/medium_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/gmail_sh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/app_dev"
+        app:layout_constraintStart_toEndOf="@+id/medium"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/gmail_icon_foreground" />
 
 
     <ImageView
@@ -161,13 +172,13 @@
         android:layout_height="40dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toStartOf="@+id/github_gh"
+        app:layout_constraintEnd_toStartOf="@+id/instagram"
         app:layout_constraintStart_toStartOf="@+id/ui_designer"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/linkedin_icon_foreground" />
 
     <ImageView
-        android:id="@+id/github_gh"
+        android:id="@+id/instagram"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="2dp"
@@ -175,7 +186,17 @@
         app:layout_constraintEnd_toStartOf="@+id/dribble"
         app:layout_constraintStart_toEndOf="@+id/linkedin_gh"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/github_icon_foreground" />
+        app:srcCompat="@drawable/insta_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/gmail_gh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/ui_designer"
+        app:layout_constraintStart_toEndOf="@+id/dribble"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/gmail_icon_foreground" />
 
     <ImageView
         android:id="@+id/dribble"
@@ -184,8 +205,8 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="5dp"
         android:padding="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/ui_designer"
-        app:layout_constraintStart_toEndOf="@+id/github_gh"
+        app:layout_constraintEnd_toStartOf="@+id/gmail_gh"
+        app:layout_constraintStart_toEndOf="@+id/instagram"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/dribble_icon" />
 

@@ -20,12 +20,12 @@
         app:layout_constraintGuide_end="20dp" />
 
     <EditText
-        android:id="@+id/add_place_name"
+        android:id="@+id/add_location_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Place Name"
+        android:hint="Location Name"
         android:inputType="text"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
@@ -41,7 +41,7 @@
         android:inputType="textPostalAddress"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
-        app:layout_constraintTop_toBottomOf="@+id/add_place_name" />
+        app:layout_constraintTop_toBottomOf="@+id/add_location_name" />
 
 
     <EditText
@@ -55,7 +55,7 @@
         android:inputType="textPostalAddress"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_place_name" />
+        app:layout_constraintTop_toBottomOf="@+id/add_location_name" />
 
     <EditText
         android:id="@+id/editTextText"
