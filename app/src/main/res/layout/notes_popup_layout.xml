@@ -21,7 +21,7 @@
         app:layout_constraintGuide_end="20dp" />
 
     <EditText
-        android:id="@+id/edit_title"
+        android:id="@+id/note_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit_content"
+        android:id="@+id/note_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -52,13 +52,13 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toBottomOf="@+id/edit_title" />
+        app:layout_constraintTop_toBottomOf="@+id/note_title" />
 
     <Button
-        android:id="@+id/button_add_notes"
+        android:id="@+id/notes_add_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ADD"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toBottomOf="@+id/edit_content" />
+        app:layout_constraintTop_toBottomOf="@+id/note_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>

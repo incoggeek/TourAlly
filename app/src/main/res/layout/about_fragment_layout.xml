@@ -28,6 +28,7 @@
         android:justificationMode="inter_word"
         android:text="@string/about_us"
         android:textSize="12sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,18 +72,19 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Md. Shamim"
         android:textAlignment="center"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_dev" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Ghania Khan"
         android:textAlignment="center"
@@ -96,7 +98,7 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="App Developer"
         android:textAlignment="center"
@@ -108,7 +110,7 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="UI/UX Designer"
         android:textAlignment="center"
@@ -118,6 +120,84 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/linkedin_sh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/github_sh"
+        app:layout_constraintStart_toStartOf="@+id/app_dev"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/linkedin_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/github_sh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/medium"
+        app:layout_constraintStart_toEndOf="@+id/linkedin_sh"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/github_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/medium"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/app_dev"
+        app:layout_constraintStart_toEndOf="@+id/github_sh"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/medium_icon_foreground" />
+
+
+    <ImageView
+        android:id="@+id/linkedin_gh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/github_gh"
+        app:layout_constraintStart_toStartOf="@+id/ui_designer"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/linkedin_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/github_gh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/dribble"
+        app:layout_constraintStart_toEndOf="@+id/linkedin_gh"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/github_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/dribble"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/ui_designer"
+        app:layout_constraintStart_toEndOf="@+id/github_gh"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/dribble_icon" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Version 1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline10" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

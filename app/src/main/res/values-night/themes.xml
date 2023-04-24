@@ -5,7 +5,7 @@
         <item name="colorPrimary">@color/rose_light</item>
         <item name="colorPrimaryVariant">@color/dark_green</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="android:textColorPrimary">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
         <item name="fontFamily">@font/poppins_semibold</item>
         <item name="background">@color/white</item>
 

@@ -1,6 +1,7 @@
 package com.app.tour_ally;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -125,9 +126,15 @@ public class MainActivity extends AppCompatActivity {
     //Method to sign out
     private void signOut() {
         mGoogleSignInClient.signOut()
+
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
+                        SharedPreferences sharedPreferences = getSharedPreferences("login", MODE_PRIVATE);
+                        SharedPreferences.Editor editorPref = sharedPreferences.edit();
+                        editorPref.putBoolean("flag", false);
+                        editorPref.apply();
+
                         Toast.makeText(MainActivity.this, "Signing out", Toast.LENGTH_LONG).show();
                         FirebaseAuth.getInstance().signOut();
                         Intent intent = new Intent(MainActivity.this, LoginActivity.class);

@@ -21,6 +21,6 @@ public class AddLocFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.add_loc_frament_layout, container, false);
+        return inflater.inflate(R.layout.add_loc_fragment_layout, container, false);
     }
 }

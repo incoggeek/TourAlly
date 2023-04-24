@@ -15,8 +15,29 @@
         android:theme="@style/Theme.Delheight"
         tools:targetApi="31">
 
+
+
+
+
         <activity
             android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true"
+            android:label="Search Results"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MySecondaryTheme" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Tour Ally" />
+
+        <activity
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,29 +45,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="true"
-            android:label="Profile" />
-
-        <activity
-            android:name=".CategoryActivity"
-            android:label="Categories"
-            android:exported="true"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/MySecondaryTheme" />
-
-        <activity
-            android:name=".RestaurantsActivity"
-            android:exported="true"
-            android:label="Restaurants"
-            android:parentActivityName=".CategoryActivity"
-            android:theme="@style/MySecondaryTheme" />
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="Tour Ally" />
     </application>
 
 </manifest>

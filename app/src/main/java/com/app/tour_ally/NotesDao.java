@@ -2,7 +2,6 @@ package com.app.tour_ally;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
-import androidx.room.Index;
 import androidx.room.Insert;
 import androidx.room.Query;
 

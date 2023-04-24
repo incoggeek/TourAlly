@@ -1,10 +1,10 @@
 <resources>
 
-<!--    For Navigation drawer -->
+    <!--    For Navigation drawer -->
     <string name="open_drawer">open navigation drawer</string>
     <string name="close_drawer">close navigation drawer</string>
 
-<!--    App & Activities related -->
+    <!--    App & Activities related -->
     <string name="app_name">Tour Ally</string>
     <string name="get_started_quote">Life is either a daring adventure or nothing!</string>
     <string name="get_started_subtext">Once a year, go some place you\'ve never been before.</string>
@@ -15,23 +15,16 @@
     <string name="add_location">Add Location</string>
     <string name="my_notes">My Notes</string>
     <string name="meet_developers"> <u>Meet Developers</u></string>
+    <string name="banner">banner</string>
+    <string name="api_key">fsq3Iy4t1GDpBoNbXkfTQG9pj8B+8J9ptgIDYDtrJzej2f0=</string>
 
 
-<!--    For drop down to select -->
-    <string-array name="array_country">
-        <item>Select Your Country</item>
+    <!--    For drop down to select -->
+    <string-array name="array_near">
         <item>India</item>
         <item>Nepal</item>
         <item>Sri Lanka</item>
         <item>Bangladesh</item>
-    </string-array>
-
-    <string-array name="array_default_state">
-        <item>Select Your State</item>
-    </string-array>
-
-    <string-array name="array_indian_states">
-        <item>Select Your State</item>
         <item>Andaman and Nicobar Islands</item>
         <item>Andhra Pradesh</item>
         <item>Arunachal Pradesh</item>
@@ -69,14 +62,6 @@
         <item>Uttarakhand</item>
         <item>Uttar Pradesh</item>
         <item>West Bengal</item>
-    </string-array>
-
-    <string-array name="array_default_districts">
-        <item>Select Your District</item>
-    </string-array>
-
-    <string-array name="array_andhra_pradesh_districts">
-        <item>Select Your District</item>
         <item>Anantapur</item>
         <item>Chittoor</item>
         <item>East Godavari</item>
@@ -90,10 +75,6 @@
         <item>Visakhapatnam</item>
         <item>Vizianagaram</item>
         <item>West Godavari</item>
-    </string-array>
-
-    <string-array name="array_arunachal_pradesh_districts">
-        <item>Select Your District</item>
         <item>Anjaw</item>
         <item>Siang</item>
         <item>Changlang</item>
@@ -117,37 +98,9 @@
         <item>Tirap</item>
         <item>Upper Siang</item>
         <item>Upper Subansiri</item>
-        <item>West Kameng</item>
-        <item>West Siang</item>
-    </string-array>
-
-    <string-array name="array_assam_districts">
-        <item>Select Your District</item>
         <item>Bajali</item>
         <item>Baksa</item>
         <item>Barpeta</item>
-        <item>Biswanath</item>
-        <item>Bongaigaon</item>
-        <item>Cachar</item>
-        <item>Charaideo</item>
-        <item>Chirang</item>
-        <item>Darrang</item>
-        <item>Dhemaji</item>
-        <item>Dhubri</item>
-        <item>Dibrugarh</item>
-        <item>Dima Hasao</item>
-        <item>Goalpara</item>
-        <item>Golaghat</item>
-        <item>Hailakandi</item>
-        <item>Hojai</item>
-        <item>Jorhat</item>
-        <item>Kamrup</item>
-        <item>Kamrup Metropolitan</item>
-        <item>Karbi Anglong</item>
-        <item>Karimganj</item>
-        <item>Kokrajhar</item>
-        <item>Lakhimpur</item>
-        <item>Majuli</item>
         <item>Morigaon</item>
         <item>Nagaon</item>
         <item>Nalbari</item>
@@ -157,10 +110,6 @@
         <item>Tinsukia</item>
         <item>Udalguri</item>
         <item>West Karbi Anglong</item>
-    </string-array>
-
-    <string-array name="array_bihar_districts">
-        <item>Select Your District</item>
         <item>Araria</item>
         <item>Arwal</item>
         <item>Aurangabad</item>
@@ -199,10 +148,6 @@
         <item>Supaul</item>
         <item>Vaishali</item>
         <item>West Champaran</item>
-    </string-array>
-
-    <string-array name="array_chhattisgarh_districts">
-        <item>Select Your District</item>
         <item>Balod</item>
         <item>Baloda Bazar</item>
         <item>Balrampur Ramanujganj</item>
@@ -212,38 +157,6 @@
         <item>Bilaspur</item>
         <item>Dantewada</item>
         <item>Dhamtari</item>
-        <item>Durg</item>
-        <item>Gariaband</item>
-        <item>Gaurela Pendra Marwahi</item>
-        <item>Janjgir Champa</item>
-        <item>Jashpur</item>
-        <item>Kabirdham</item>
-        <item>Kanker</item>
-        <item>Kondagaon</item>
-        <item>Korba</item>
-        <item>Koriya</item>
-        <item>Mahasamund</item>
-        <item>Mungeli</item>
-        <item>Narayanpur</item>
-        <item>Raigarh</item>
-        <item>Raipur</item>
-        <item>Rajnandgaon</item>
-        <item>Sukma</item>
-        <item>Surajpur</item>
-        <item>Surguja</item>
-    </string-array>
-
-    <string-array name="array_goa_districts">
-        <item>Select Your District</item>
-        <item>North Goa</item>
-        <item>South Goa</item>
-    </string-array>
-
-    <string-array name="array_gujarat_districts">
-        <item>Select Your District</item>
-        <item>Ahmedabad</item>
-        <item>Amreli</item>
-        <item>Anand</item>
         <item>Aravalli</item>
         <item>Banaskantha</item>
         <item>Bharuch</item>
@@ -274,10 +187,6 @@
         <item>Tapi</item>
         <item>Vadodara</item>
         <item>Valsad</item>
-    </string-array>
-
-    <string-array name="array_haryana_districts">
-        <item>Select Your District</item>
         <item>Ambala</item>
         <item>Bhiwani</item>
         <item>Charkhi Dadri</item>
@@ -300,10 +209,6 @@
         <item>Sirsa</item>
         <item>Sonipat</item>
         <item>Yamunanagar</item>
-    </string-array>
-
-    <string-array name="array_himachal_pradesh_districts">
-        <item>Select Your District</item>
         <item>Bilaspur</item>
         <item>Chamba</item>
         <item>Hamirpur</item>
@@ -316,10 +221,6 @@
         <item>Sirmaur</item>
         <item>Solan</item>
         <item>Una</item>
-    </string-array>
-
-    <string-array name="array_jammu_kashmir_districts">
-        <item>Select Your District</item>
         <item>Anantnag</item>
         <item>Bandipora</item>
         <item>Baramulla</item>
@@ -329,9 +230,6 @@
         <item>Jammu</item>
         <item>Kathua</item>
         <item>Kishtwar</item>
-        <item>Kulgam</item>
-        <item>Kupwara</item>
-        <item>Poonch</item>
         <item>Pulwama</item>
         <item>Rajouri</item>
         <item>Ramban</item>
@@ -340,10 +238,6 @@
         <item>Shopian</item>
         <item>Srinagar</item>
         <item>Udhampur</item>
-    </string-array>
-
-    <string-array name="array_jharkhand_districts">
-        <item>Select Your District</item>
         <item>Bokaro</item>
         <item>Chatra</item>
         <item>Deoghar</item>
@@ -368,47 +262,10 @@
         <item>Seraikela Kharsawan</item>
         <item>Simdega</item>
         <item>West Singhbhum</item>
-    </string-array>
-
-    <string-array name="array_karnataka_districts">
-        <item>Select Your District</item>
         <item>Bagalkot</item>
         <item>Bangalore Rural</item>
         <item>Bangalore Urban</item>
         <item>Belgaum</item>
-        <item>Bellary</item>
-        <item>Bidar</item>
-        <item>Chamarajanagar</item>
-        <item>Chikkaballapur</item>
-        <item>Chikkamagaluru</item>
-        <item>Chitradurga</item>
-        <item>Dakshina Kannada</item>
-        <item>Davanagere</item>
-        <item>Dharwad</item>
-        <item>Gadag</item>
-        <item>Gulbarga</item>
-        <item>Hassan</item>
-        <item>Haveri</item>
-        <item>Kodagu</item>
-        <item>Kolar</item>
-        <item>Koppal</item>
-        <item>Mandya</item>
-        <item>Mysore</item>
-        <item>Raichur</item>
-        <item>Ramanagara</item>
-        <item>Shimoga</item>
-        <item>Tumkur</item>
-        <item>Udupi</item>
-        <item>Uttara Kannada</item>
-        <item>Vijayanagara</item>
-        <item>Vijayapura</item>
-        <item>Yadgir</item>
-    </string-array>
-
-    <string-array name="array_kerala_districts">
-        <item>Select Your District</item>
-        <item>Alappuzha</item>
-        <item>Ernakulam</item>
         <item>Idukki</item>
         <item>Kannur</item>
         <item>Kasaragod</item>
@@ -421,10 +278,6 @@
         <item>Thiruvananthapuram</item>
         <item>Thrissur</item>
         <item>Wayanad</item>
-    </string-array>
-
-    <string-array name="array_madhya_pradesh_districts">
-        <item>Select Your District</item>
         <item>Agar Malwa</item>
         <item>Alirajpur</item>
         <item>Anuppur</item>
@@ -480,15 +333,10 @@
         <item>Ujjain</item>
         <item>Umaria</item>
         <item>Vidisha</item>
-    </string-array>
-
-    <string-array name="array_maharashtra_districts">
-        <item>Select Your District</item>
         <item>Ahmednagar</item>
         <item>Akola</item>
         <item>Amravati</item>
         <item>Aurangabad</item>
-        <item>Beed</item>
         <item>Bhandara</item>
         <item>Buldhana</item>
         <item>Chandrapur</item>
@@ -520,15 +368,9 @@
         <item>Wardha</item>
         <item>Washim</item>
         <item>Yavatmal</item>
-    </string-array>
-
-    <string-array name="array_manipur_districts">
-        <item>Select Your District</item>
         <item>Bishnupur</item>
         <item>Chandel</item>
         <item>Churachandpur</item>
-        <item>Imphal East</item>
-        <item>Imphal West</item>
         <item>Jiribam</item>
         <item>Kakching</item>
         <item>Kamjong</item>
@@ -540,25 +382,6 @@
         <item>Tengnoupal</item>
         <item>Thoubal</item>
         <item>Ukhrul</item>
-    </string-array>
-
-    <string-array name="array_meghalaya_districts">
-        <item>Select Your District</item>
-        <item>East Garo Hills</item>
-        <item>East Jaintia Hills</item>
-        <item>East Khasi Hills</item>
-        <item>North Garo Hills</item>
-        <item>Ri Bhoi</item>
-        <item>South Garo Hills</item>
-        <item>South West Garo Hills</item>
-        <item>South West Khasi Hills</item>
-        <item>West Garo Hills</item>
-        <item>West Jaintia Hills</item>
-        <item>West Khasi Hills</item>
-    </string-array>
-
-    <string-array name="array_mizoram_districts">
-        <item>Select Your District</item>
         <item>Aizawl</item>
         <item>Champhai</item>
         <item>Hnahthial</item>
@@ -567,39 +390,6 @@
         <item>Lawngtlai</item>
         <item>Lunglei</item>
         <item>Mamit</item>
-        <item>Saiha</item>
-        <item>Saitual</item>
-        <item>Serchhip</item>
-    </string-array>
-
-    <string-array name="array_nagaland_districts">
-        <item>Select Your District</item>
-        <item>Dimapur</item>
-        <item>Kiphire</item>
-        <item>Kohima</item>
-        <item>Longleng</item>
-        <item>Mokokchung</item>
-        <item>Mon</item>
-        <item>Peren</item>
-        <item>Phek</item>
-        <item>Tuensang</item>
-        <item>Wokha</item>
-        <item>Zunheboto</item>
-        <item>Noklak</item>
-    </string-array>
-
-    <string-array name="array_odisha_districts">
-        <item>Select Your District</item>
-        <item>Angul</item>
-        <item>Balangir</item>
-        <item>Balasore</item>
-        <item>Bargarh</item>
-        <item>Bhadrak</item>
-        <item>Boudh</item>
-        <item>Cuttack</item>
-        <item>Debagarh</item>
-        <item>Dhenkanal</item>
-        <item>Gajapati</item>
         <item>Ganjam</item>
         <item>Jagatsinghpur</item>
         <item>Jajpur</item>
@@ -610,20 +400,12 @@
         <item>Kendujhar</item>
         <item>Khordha</item>
         <item>Koraput</item>
-        <item>Malkangiri</item>
-        <item>Mayurbhanj</item>
-        <item>Nabarangpur</item>
-        <item>Nayagarh</item>
         <item>Nuapada</item>
         <item>Puri</item>
         <item>Rayagada</item>
         <item>Sambalpur</item>
         <item>Subarnapur</item>
         <item>Sundergarh</item>
-    </string-array>
-
-    <string-array name="array_punjab_districts">
-        <item>Select Your District</item>
         <item>Amritsar</item>
         <item>Barnala</item>
         <item>Bathinda</item>
@@ -645,11 +427,6 @@
         <item>Rupnagar</item>
         <item>Sangrur</item>
         <item>Shaheed Bhagat Singh Nagar</item>
-        <item>Tarn Taran</item>
-    </string-array>
-
-    <string-array name="array_rajasthan_districts">
-        <item>Select Your District</item>
         <item>Ajmer</item>
         <item>Alwar</item>
         <item>Banswara</item>
@@ -683,19 +460,6 @@
         <item>Sirohi</item>
         <item>Tonk</item>
         <item>Udaipur</item>
-    </string-array>
-
-    <string-array name="array_sikkim_districts">
-        <item>Select Your District</item>
-        <item>East Sikkim</item>
-        <item>North Sikkim</item>
-        <item>South Sikkim</item>
-        <item>West Sikkim</item>
-    </string-array>
-
-    <string-array name="array_tamil_nadu_districts">
-        <item>Select Your District</item>
-        <item>Ariyalur</item>
         <item>Chengalpattu</item>
         <item>Chennai</item>
         <item>Coimbatore</item>
@@ -733,10 +497,6 @@
         <item>Vellore</item>
         <item>Viluppuram</item>
         <item>Virudhunagar</item>
-    </string-array>
-
-    <string-array name="array_telangana_districts">
-        <item>Select Your District</item>
         <item>Adilabad</item>
         <item>Bhadradri Kothagudem</item>
         <item>Hyderabad</item>
@@ -749,17 +509,6 @@
         <item>Khammam</item>
         <item>Komaram Bheem</item>
         <item>Mahabubabad</item>
-        <item>Mahbubnagar</item>
-        <item>Mancherial</item>
-        <item>Medak</item>
-        <item>Medchal</item>
-        <item>Mulugu</item>
-        <item>Nagarkurnool</item>
-        <item>Nalgonda</item>
-        <item>Narayanpet</item>
-        <item>Nirmal</item>
-        <item>Nizamabad</item>
-        <item>Peddapalli</item>
         <item>Rajanna Sircilla</item>
         <item>Ranga Reddy</item>
         <item>Sangareddy</item>
@@ -770,10 +519,6 @@
         <item>Warangal Rural</item>
         <item>Warangal Urban</item>
         <item>Yadadri Bhuvanagiri</item>
-    </string-array>
-
-    <string-array name="array_tripura_districts">
-        <item>Select Your District</item>
         <item>Dhalai</item>
         <item>Gomati</item>
         <item>Khowai</item>
@@ -782,10 +527,6 @@
         <item>South Tripura</item>
         <item>Unakoti</item>
         <item>West Tripura</item>
-    </string-array>
-
-    <string-array name="array_uttar_pradesh_districts">
-        <item>Select Your District</item>
         <item>Agra</item>
         <item>Aligarh</item>
         <item>Prayagraj</item>
@@ -861,10 +602,6 @@
         <item>Sultanpur</item>
         <item>Unnao</item>
         <item>Varanasi</item>
-    </string-array>
-
-    <string-array name="array_uttarakhand_districts">
-        <item>Select Your District</item>
         <item>Almora</item>
         <item>Bageshwar</item>
         <item>Chamoli</item>
@@ -878,10 +615,6 @@
         <item>Tehri</item>
         <item>Udham Singh Nagar</item>
         <item>Uttarkashi</item>
-    </string-array>
-
-    <string-array name="array_west_bengal_districts">
-        <item>Select Your District</item>
         <item>Alipurduar</item>
         <item>Bankura</item>
         <item>Birbhum</item>
@@ -905,60 +638,36 @@
         <item>Purulia</item>
         <item>South 24 Parganas</item>
         <item>Uttar Dinajpur</item>
-    </string-array>
-
-    <string-array name="array_andaman_nicobar_districts">
-        <item>Select Your District</item>
         <item>Nicobar</item>
         <item>North Middle Andaman</item>
         <item>South Andaman</item>
-    </string-array>
-
-    <string-array name="array_chandigarh_districts">
         <item>Chandigarh</item>
-    </string-array>
-
-    <string-array name="array_dadra_nagar_haveli_districts">
         <item>Dadra Nagar Haveli</item>
-    </string-array>
-
-    <string-array name="array_daman_diu_districts">
-        <item>Select Your District</item>
         <item>Daman</item>
         <item>Diu</item>
-    </string-array>
-
-    <string-array name="array_delhi_districts">
-        <item>Select Your District</item>
-        <item>Central Delhi</item>
-        <item>East Delhi</item>
-        <item>New Delhi</item>
-        <item>North Delhi</item>
-        <item>North East Delhi</item>
-        <item>North West Delhi</item>
         <item>Shahdara</item>
-        <item>South Delhi</item>
-        <item>South East Delhi</item>
-        <item>South West Delhi</item>
         <item>West Delhi</item>
-    </string-array>
-
-    <string-array name="array_lakshadweep_districts">
         <item>Lakshadweep</item>
-    </string-array>
-
-    <string-array name="array_ladakh_districts">
-        <item>Select Your District</item>
         <item>Kargil</item>
         <item>Leh</item>
-    </string-array>
-
-    <string-array name="array_puducherry_districts">
-        <item>Select Your District</item>
         <item>Karaikal</item>
         <item>Mahe</item>
         <item>Puducherry</item>
         <item>Yanam</item>
+    </string-array>
+
+
+    <string-array name="auto_complete_query">
+        <item>Top Picks</item>
+        <item>Trending</item>
+        <item>Food</item>
+        <item>Coffee</item>
+        <item>Fun</item>
+        <item>Restaurants</item>
+        <item>Hotels</item>
+        <item>Shopping</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
     </string-array>
 
 </resources>
