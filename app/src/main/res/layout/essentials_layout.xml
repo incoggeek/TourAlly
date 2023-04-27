@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dimen_20" />
+
+    <ImageView
+        android:id="@+id/essen_banner"
+        android:layout_width="370dp"
+        android:layout_height="225dp"
+        android:contentDescription="@string/banner"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tourguidebanner" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Essential Tour Kit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/essen_banner" />
+
+    <!--    My Planner -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myplanner"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_marginTop="@dimen/dimen_20"
+        app:layout_constraintEnd_toStartOf="@+id/translator"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_myplanner"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_100"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            android:elevation="@dimen/dimen_5"
+            app:cardCornerRadius="@dimen/dimen_8">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_70"
+                    android:layout_height="@dimen/dimen_70"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:src="@drawable/planner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:text="My Planner"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    Translator-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/translator"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_marginTop="@dimen/dimen_20"
+        app:layout_constraintEnd_toStartOf="@+id/compass"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/myplanner"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_translator"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_100"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            app:cardCornerRadius="@dimen/dimen_8">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_100"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_70"
+                    android:layout_height="@dimen/dimen_70"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:src="@drawable/languages" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:text="Translator"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    Compass-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/compass"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/calendar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/translator"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_compass"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/compass" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Compass"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    Calendar-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/calendar"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toEndOf="@+id/compass"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_calendar"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Calendar"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    Currency Converter-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/currency_converter"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/weather_forecast"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/myplanner">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_curr_conv"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/moneyexchange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Currency Converter"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    Weather Forecast-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/weather_forecast"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/hire_guide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/currency_converter"
+        app:layout_constraintTop_toBottomOf="@+id/translator">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_weather_forecast"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/weather_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Weather Forecast"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    Hire Guide -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hire_guide"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/cab"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/weather_forecast"
+        app:layout_constraintTop_toBottomOf="@+id/compass">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_hire_guide"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_110"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/tourguide" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Hire a Guide"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    Book a Cab  -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cab"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toEndOf="@+id/hire_guide"
+        app:layout_constraintTop_toBottomOf="@+id/calendar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_guide"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:backgroundTint="@color/rose_light"
+            android:clickable="true"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/guide" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Travel Guide"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,7 @@
         app:layout_constraintGuide_end="20dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/essen_banner"
         android:layout_width="381dp"
         android:layout_height="225dp"
         android:contentDescription="@string/banner"
@@ -38,7 +38,7 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/essen_banner" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -62,7 +62,6 @@
             android:textSize="12sp"
             android:completionThreshold="1"
             android:dropDownHeight="wrap_content"
-            dropDownVerticalOffset = "20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,16 +87,25 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_marginStart="20dp"
+            android:completionThreshold="1"
+            android:dropDownHeight="wrap_content"
             android:hint="Location"
             android:inputType="textAutoComplete"
             android:textSize="12sp"
-            android:completionThreshold="1"
-            android:dropDownHeight="wrap_content"
-            dropDownVerticalOffset = "20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gps_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/near"
+            app:layout_constraintEnd_toEndOf="@+id/near"
+            app:layout_constraintTop_toTopOf="@+id/near"
+            app:srcCompat="@drawable/baseline_gps_fixed_24" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button

@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
     NavigationView mNavigationView;
     Toolbar mToolbar;
     AddLocFragment mAddLocFragment;
-    NotesFragment mNotesFragment;
     DefaultFragment mDefaultFragment;
     AboutFragment mAboutFragment;
+    EssentialFragment mEssentialFragment;
 
 
     @Override
@@ -72,32 +72,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                switch (item.getItemId()) {
-
-                    case R.id.home:
+                    if(item.getItemId()==R.id.home) {
                         mDefaultFragment = new DefaultFragment();
                         loadFragment(mDefaultFragment, 1);
-                        break;
+                    }
 
-                    case R.id.add_location:
+                    if (item.getItemId()==R.id.add_location) {
                         mAddLocFragment = new AddLocFragment();
                         loadFragment(mAddLocFragment, 1);
-                        break;
+                    }
 
-                    case R.id.add_notes:
-                        mNotesFragment = new NotesFragment();
-                        loadFragment(mNotesFragment, 1);
-                        break;
+                    if (item.getItemId()==R.id.essential) {
+                        mEssentialFragment = new EssentialFragment();
+                        loadFragment(mEssentialFragment, 1);
+                    }
 
-                    case R.id.about:
+                    if (item.getItemId()==R.id.about) {
                         mAboutFragment = new AboutFragment();
                         loadFragment(mAboutFragment, 1);
-                        break;
+                    }
 
-                    case R.id.log_out:
+                    if (item.getItemId()==R.id.log_out) {
                         signOut();
-                        break;
-                }
+                    }
+                    
                 return false;
 
             }
