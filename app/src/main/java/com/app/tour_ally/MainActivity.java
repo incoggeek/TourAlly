@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     if (item.getItemId()==R.id.log_out) {
                         signOut();
                     }
-                    
+
                 return false;
 
             }

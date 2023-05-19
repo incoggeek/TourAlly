@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -45,7 +44,7 @@ public class MyPlannerActivity extends AppCompatActivity {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         CollectionReference notesRef = db.collection("notes");
 
-        mFloatingActionBtn = findViewById(R.id.foa_btn);
+        mFloatingActionBtn = findViewById(R.id.notes_add_foa);
 
         mFloatingActionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,9 +56,9 @@ public class MyPlannerActivity extends AppCompatActivity {
 
                 mEditTitle = dialog.findViewById(R.id.note_title);
                 mEditContent = dialog.findViewById(R.id.note_content);
-                Button addNotesBtn = dialog.findViewById(R.id.notes_add_btn);
+                FloatingActionButton foaBtn = dialog.findViewById(R.id.notes_add_foa);
 
-                addNotesBtn.setOnClickListener(new View.OnClickListener() {
+                foaBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         String title = mEditTitle.getText().toString();
@@ -104,7 +103,7 @@ public class MyPlannerActivity extends AppCompatActivity {
                 WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
                 lp.copyFrom(dialog.getWindow().getAttributes());
                 lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-                lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+                lp.height = WindowManager.LayoutParams.MATCH_PARENT;
                 dialog.show();
                 dialog.getWindow().setAttributes(lp);
 

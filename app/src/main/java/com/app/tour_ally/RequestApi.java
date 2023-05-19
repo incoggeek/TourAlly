@@ -3,6 +3,9 @@ package com.app.tour_ally;
 import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -94,6 +97,7 @@ public class RequestApi extends AsyncTask<String, Void, JSONObject> {
                     Log.d("prem", geoCodes.toString());
 
 
+                    //Setting up recycler view to list search results
                     RecyclerView recyclerView = mActivity.findViewById(R.id.location_recyclerView);
                     recyclerView.setLayoutManager(new LinearLayoutManager(mActivity));
                     recyclerView.setAdapter(new LocationRecyclerAdapter(mActivity, names, formattedAddresses,geoCodes));
@@ -102,7 +106,7 @@ public class RequestApi extends AsyncTask<String, Void, JSONObject> {
 
 
             } catch (JSONException e) {
-                throw new RuntimeException(e);
+
             }
         }
     }

@@ -38,6 +38,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
             public void onClick(View v) {
 
 
+                //Delete notes code
 
             }
         });
