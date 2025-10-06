@@ -1,8 +1,7 @@
 
 # Tour Ally
 
-Tour Ally - A final year academic project, a tour guide application is to provide value
-to travelers and enhance their travel experience.
+Tour Ally is a tour‑guide application focused on delivering value to travelers through curated routes, local tips, and offl ine support. I developed the app using JAVA to learn how mobile apps are built and can be secured so I could effectively perform mobile penetration testing
 
 ## Features
 
